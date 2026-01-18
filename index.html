@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pension Canine</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter, sans-serif;color:#111;background:#fff}
+a{text-decoration:none;color:inherit}
+
+
+/* NAV */
+nav{position:fixed;top:0;width:100%;padding:24px 60px;display:flex;justify-content:space-between;align-items:center;z-index:10;color:white}
+nav .links a{margin-left:30px;font-size:14px;letter-spacing:1px}
+
+
+/* HERO */
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;display:flex;align-items:center}
+.hero-content{margin-left:8%;max-width:520px;color:white}
+.hero h1{font-family:'Playfair Display',serif;font-size:52px;font-weight:600;line-height:1.1;margin-bottom:20px}
+.hero p{font-size:16px;line-height:1.6;opacity:.9}
+
+
+/* SECTION */
+section{padding:120px 8%}
+section h2{font-family:'Playfair Display',serif;font-size:36px;margin-bottom:60px}
+
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:60px}
+.service h3{font-size:18px;margin-bottom:12px}
+.service p{font-size:15px;line-height:1.6;color:#555}
+
+
+/* FORM */
+form{max-width:520px}
+form input,form textarea{width:100%;border:none;border-bottom:1px solid #aaa;padding:14px 0;margin-bottom:26px;font-size:15px}
+form button{margin-top:20px;padding:16px 40px;background:#111;color:white;border:none;font-size:13px;letter-spacing:2px;cursor:pointer}
+
+
+/* FOOTER */
+footer{padding:60px 0;text-align:center;font-size:13px;color:#777}
+</style>
+</head>
+<body>
+
+
+<nav>
+<strong>PENSION CANINE</strong>
+<div class="links">
+<a href="#services">SERVICES</a>
+<a href="mailto:stephanvava4@icloud.com">INSCRIPTION</a>
+</div>
+</nav>
+
+
+<div class="hero">
+<div class="hero-content">
+<h1>Pension canine<br>en terrain clôturé</h1>
+<p>Un cadre calme, sécurisé et structuré pour accueillir votre chien pendant votre absence.</p>
+</div>
+</div>
+
+
+<section id="services">
+<h2>Nos services</h2>
+<div class="services">
+<div class="service">
+<h3>Nourriture fournie par le propriétaire</h3>
+<p>Les propriétaires doivent apporter la nourriture habituelle de leur chien afin de respecter son régime.</p>
+</div>
+<div class="service">
+<h3>Terrain clôturé</h3>
+<p>Espaces entièrement sécurisés garantissant la sécurité des chiens.</p>
+</div>
+<div class="service">
+<h3>Cages individuelles</h3>
+<p>Hébergement propre et adapté à chaque chien.</p>
+</div>
+<div class="service">
+<h3>Sortie quotidienne</h3>
+<p>Sortie une fois par jour dans le terrain clôturé.</p>
+</div>
+</div>
+</section>
+
+
+<section>
+<h2>Inscrire un chien</h2>
+<form action="mailto:stephanvava4@icloud.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Nom du propriétaire" required>
+<input type="text" placeholder="Nom du chien" required>
+<input type="text" placeholder="Âge du chien">
+<textarea rows="3" placeholder="Informations importantes"></textarea>
+<button type="submit">ENVOYER LA DEMANDE</button>
+</form>
+</section>
+
+
+<footer>
+© 2026 Pension Canine · Terrain clôturé · Sécurité & confiance
+</footer>
+
+
+</body>
+</html>
